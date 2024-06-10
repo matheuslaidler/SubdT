@@ -1,11 +1,14 @@
 #subdt v0.0.1 -> subdomain tracker -> a subdomain finder
 import time
-import requests # type: ignore
+import requests
 
 def subdomain_search():
     '''
     This function performs a brute force search on a specified website to check
     for the existence of certain sub-domains
+
+    Função que faz uma varredura, por força bruta, da existência de subdomínios 
+    de um site especificado
     '''
     print("  ./subdt by matheuslaidler \n Type the website without protocol like 'https://'  \n  ( e.g. matheuslaidler.github.io )\n")
     site = input(" Enter a valid URL> ")
