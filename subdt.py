@@ -25,7 +25,7 @@ def subdomain_search():
             print(f" * {subdomain} received the request => [status code {status} - informational response] - {url}")
         elif 199 < status < 300:
             print(f" * {subdomain} exists => [status code {status} - successful!!]")
-            print(f"{url}")
+            print(f"  {url}")
         elif 299 < status < 400:
             print(f" * {subdomain} is redirecting => [status code {status} - redirection] - {url}")
         elif 399 < status < 500:
